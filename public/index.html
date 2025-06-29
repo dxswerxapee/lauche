@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#8a2be2" />
+    <meta name="description" content="DRXQVLN LAUNCHER - Современный лаунчер утилит" />
+    <title>DRXQVLN LAUNCHER</title>
+    <style>
+      body {
+        background: linear-gradient(135deg, #0f0f23 0%, #1a1a2e 25%, #16213e 50%, #1a1a2e 75%, #0f0f23 100%);
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+      }
+      
+      .loading {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        background: linear-gradient(135deg, #0f0f23 0%, #1a1a2e 25%, #16213e 50%, #1a1a2e 75%, #0f0f23 100%);
+        color: white;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-size: 18px;
+      }
+      
+      .loading::after {
+        content: '●●●';
+        animation: loading 1.5s infinite;
+        color: #8a2be2;
+        margin-left: 10px;
+      }
+      
+      @keyframes loading {
+        0%, 20% { opacity: 0; }
+        50% { opacity: 1; }
+        100% { opacity: 0; }
+      }
+    </style>
+  </head>
+  <body>
+    <noscript>Необходимо включить JavaScript для работы приложения.</noscript>
+    <div id="root">
+      <div class="loading">Загрузка DRXQVLN LAUNCHER</div>
+    </div>
+  </body>
+</html> 
